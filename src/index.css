@@ -1,0 +1,214 @@
+/* Global Theme Reset & Theme Variables matching User Image */
+:root {
+  --primary-green: #16a34a;
+  --primary-green-hover: #15803d;
+  --primary-green-light: #dcfce7;
+  --primary-navy: #0a1e36;
+  --primary-navy-dark: #061527;
+  --primary-navy-light: #0f2942;
+  --accent-blue: #0284c7;
+  --accent-blue-light: #e0f2fe;
+  --bg-sky: #f0f7fd;
+  --bg-light: #f8fafc;
+  --card-bg: #ffffff;
+  --text-navy: #0a1e36;
+  --text-dark: #0f172a;
+  --text-slate: #334155;
+  --text-muted: #64748b;
+  --text-light: #f1f5f9;
+  --border-light: #e2e8f0;
+  --border-green: rgba(22, 163, 74, 0.3);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-light);
+  color: var(--text-slate);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-navy);
+  font-weight: 800;
+  line-height: 1.25;
+}
+
+p {
+  line-height: 1.65;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+  border: none;
+  outline: none;
+}
+
+input, select, textarea {
+  font-family: inherit;
+  font-size: 16px; /* Prevents auto-zoom on iOS */
+}
+
+/* Common Page Banner for Inner Pages */
+.page-banner {
+  background-color: #f0f7fd;
+  background-image: radial-gradient(circle at 10% 20%, rgba(22, 163, 74, 0.1) 0%, transparent 40%),
+                    radial-gradient(circle at 90% 80%, rgba(2, 132, 199, 0.1) 0%, transparent 40%);
+  color: var(--text-navy);
+  padding: 65px 5% 55px;
+  text-align: center;
+  position: relative;
+  border-bottom: 1px solid #e2e8f0;
+  overflow: hidden;
+}
+
+/* Optional HD Background Image Banner */
+.page-banner-with-bg {
+  background-color: #edf5fb;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner-bg-img-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.14;
+  z-index: 0;
+  pointer-events: none;
+  filter: saturate(1.2);
+}
+
+.banner-bg-overlay-grad {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(240, 247, 253, 0.94) 0%, rgba(225, 239, 250, 0.90) 60%, rgba(230, 244, 234, 0.93) 100%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.banner-content-relative {
+  position: relative;
+  z-index: 1;
+}
+
+.page-banner-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #ffffff;
+  color: var(--primary-green);
+  border: 1px solid var(--border-green);
+  padding: 6px 16px;
+  border-radius: 9999px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  position: relative;
+  overflow: hidden;
+}
+
+.page-banner-badge::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(22, 163, 74, 0.2), transparent);
+  animation: shimmerBannerBadge 3.2s infinite;
+}
+
+@keyframes shimmerBannerBadge {
+  0% { left: -100%; }
+  50%, 100% { left: 200%; }
+}
+
+.page-banner h1 {
+  font-size: 38px;
+  font-weight: 800;
+  color: var(--text-navy);
+  margin-bottom: 14px;
+}
+
+.page-banner h1 span {
+  color: var(--primary-green);
+  position: relative;
+  display: inline-block;
+}
+
+.page-banner p {
+  color: var(--text-muted);
+  max-width: 760px;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Common Section Container */
+.page-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 60px 5%;
+}
+
+/* Global Subtle Motion Helpers */
+.hover-float {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
+}
+
+.hover-float:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(10, 30, 54, 0.09);
+}
+
+@media (max-width: 768px) {
+  .page-banner {
+    padding: 40px 5% 35px;
+  }
+  .page-banner h1 {
+    font-size: 28px;
+  }
+  .page-banner p {
+    font-size: 14.5px;
+  }
+  .page-container {
+    padding: 35px 5%;
+  }
+}

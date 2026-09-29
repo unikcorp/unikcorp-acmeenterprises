@@ -1,0 +1,295 @@
+/* Sister Concerns Page Styles - Green & Navy Theme */
+.concerns-page {
+  width: 100%;
+  background-color: #f8fafc;
+}
+
+.four-quadrant-wrapper {
+  background: #ffffff;
+  border-radius: 20px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 6px 24px rgba(10, 30, 54, 0.04);
+  padding: 40px 36px;
+  margin-bottom: 50px;
+  text-align: left;
+}
+
+.four-quadrant-header {
+  text-align: center;
+  max-width: 750px;
+  margin: 0 auto 36px;
+}
+
+.four-quadrant-header h2 {
+  font-size: 28px;
+  font-weight: 900;
+  color: #0a1e36;
+  margin: 8px 0 10px;
+}
+
+.four-quadrant-header p {
+  font-size: 14.5px;
+  color: #64748b;
+  margin: 0;
+}
+
+.four-quadrant-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.quadrant-card {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 28px 24px;
+  transition: all 0.25s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.quadrant-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(10, 30, 54, 0.08);
+}
+
+.quad-acme:hover { border-color: #16a34a; }
+.quad-vss:hover { border-color: #ea580c; }
+.quad-kerbtech:hover { border-color: #0284c7; }
+.quad-matco:hover { border-color: #dc2626; }
+
+.quad-logo-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  padding: 14px 18px;
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  min-height: 110px;
+}
+
+.quad-brand-img {
+  max-width: 100%;
+  max-height: 85px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+  transition: transform 0.3s ease;
+}
+
+.quadrant-card:hover .quad-brand-img {
+  transform: scale(1.05);
+}
+
+.quad-role-tag {
+  display: inline-block;
+  font-size: 11.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #16a34a;
+  margin-bottom: 8px;
+}
+
+.quad-desc {
+  font-size: 13.5px;
+  color: #475569;
+  line-height: 1.6;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.concerns-list {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  margin-bottom: 50px;
+}
+
+.concern-mega-card {
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 20px rgba(10, 30, 54, 0.04);
+  padding: 38px 34px;
+  text-align: left;
+  transition: all 0.25s ease;
+}
+
+.concern-mega-card:hover {
+  border-color: #16a34a;
+  box-shadow: 0 12px 30px rgba(10, 30, 54, 0.08);
+}
+
+.concern-card-top {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.concern-icon-badge {
+  width: 62px;
+  height: 62px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.concern-title-area {
+  flex: 1;
+}
+
+.concern-pill-badge {
+  display: inline-block;
+  font-size: 11.5px;
+  font-weight: 700;
+  padding: 3px 12px;
+  border-radius: 9999px;
+  border: 1px solid;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.concern-title-area h2 {
+  font-size: 22px;
+  font-weight: 900;
+  color: #0a1e36;
+  margin-bottom: 4px;
+}
+
+.concern-tagline {
+  font-size: 13.5px;
+  color: #64748b;
+  font-weight: 600;
+  margin: 0;
+}
+
+.concern-full-desc {
+  font-size: 15px;
+  line-height: 1.75;
+  color: #475569;
+  margin-bottom: 24px;
+}
+
+.concern-highlights-box {
+  background: #f0f7fd;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 22px 20px;
+}
+
+.concern-highlights-box h4 {
+  font-size: 14px;
+  font-weight: 800;
+  color: #0a1e36;
+  margin-bottom: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.concern-points-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.h-point {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 13px;
+  color: #0a1e36;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.h-point svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* Synergy Box */
+.synergy-box {
+  background: #04182b;
+  border-radius: 18px;
+  padding: 38px 32px;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  text-align: left;
+  flex-wrap: wrap;
+}
+
+.synergy-left {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex: 1;
+}
+
+.synergy-icon {
+  color: #4ade80;
+  flex-shrink: 0;
+}
+
+.synergy-left h3 {
+  font-size: 20px;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 6px;
+}
+
+.synergy-left p {
+  color: #cbd5e1;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .four-quadrant-grid {
+    grid-template-columns: 1fr;
+  }
+  .four-quadrant-wrapper {
+    padding: 28px 20px;
+  }
+  .concern-card-top {
+    flex-direction: column;
+  }
+  .concern-points-grid {
+    grid-template-columns: 1fr;
+  }
+  .synergy-left {
+    flex-direction: column;
+    text-align: center;
+  }
+  .synergy-box {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 680px) {
+  .four-quadrant-wrapper,
+  .concern-mega-card,
+  .synergy-box {
+    padding: 22px 18px;
+  }
+  .four-quadrant-header h2 {
+    font-size: 22px;
+  }
+  .concern-title-area h2 {
+    font-size: 19px;
+  }
+}

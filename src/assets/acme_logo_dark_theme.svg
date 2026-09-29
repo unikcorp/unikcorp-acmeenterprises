@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 220" width="100%" height="100%">
+  <!-- ACME Enterprises Official Brand Logo - Transparent Background for Navy/Dark Surfaces -->
+  <defs>
+    <!-- Brand Emerald Gradient for C and Swoosh -->
+    <linearGradient id="acmeEmeraldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="50%" stop-color="#16a34a" />
+      <stop offset="100%" stop-color="#15803d" />
+    </linearGradient>
+    <filter id="subtleGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="1" stdDeviation="1" flood-color="#000000" flood-opacity="0.3" />
+    </filter>
+  </defs>
+
+  <g filter="url(#subtleGlow)">
+    <!-- 1. Swoosh Arc over M & E -->
+    <path 
+      d="M 220 78 C 275 14, 400 12, 475 52 C 410 24, 295 26, 240 90 Z" 
+      fill="url(#acmeEmeraldGrad)" 
+    />
+
+    <!-- 2. Letter A (Crisp White) -->
+    <path 
+      d="M 45 125 L 82 22 L 108 22 L 145 125 L 118 125 L 109 98 L 79 98 L 71 125 Z M 85 78 L 103 78 L 94 48 Z" 
+      fill="#ffffff" 
+    />
+
+    <!-- 3. Letter C (Stylized Emerald Crescent) -->
+    <path 
+      d="M 230 42 C 170 40, 138 78, 148 122 C 158 165, 208 172, 248 156 C 210 160, 178 148, 172 122 C 166 94, 196 64, 230 64 Z" 
+      fill="url(#acmeEmeraldGrad)" 
+    />
+
+    <!-- 4. Letter M (Crisp White) -->
+    <path 
+      d="M 268 125 L 268 22 L 296 22 L 322 84 L 348 22 L 376 22 L 376 125 L 354 125 L 354 55 L 332 108 L 312 108 L 290 55 L 290 125 Z" 
+      fill="#ffffff" 
+    />
+
+    <!-- 5. Letter E (Crisp White) -->
+    <path 
+      d="M 410 125 L 410 22 L 472 22 L 472 44 L 434 44 L 434 62 L 466 62 L 466 84 L 434 84 L 434 103 L 474 103 L 474 125 Z" 
+      fill="#ffffff" 
+    />
+
+    <!-- 6. ACME ENTERPRISES Subtitle (Crisp White) -->
+    <text 
+      x="260" 
+      y="168" 
+      font-family="'Montserrat', 'Arial Black', 'Inter', sans-serif" 
+      font-size="30" 
+      font-weight="900" 
+      fill="#ffffff" 
+      text-anchor="middle" 
+      letter-spacing="4.5"
+    >
+      ACME ENTERPRISES
+    </text>
+
+    <!-- 7. Recruitment Solutions Subtitle (Light Slate) -->
+    <text 
+      x="260" 
+      y="198" 
+      font-family="'Inter', 'Segoe UI', sans-serif" 
+      font-size="19" 
+      font-weight="600" 
+      fill="#cbd5e1" 
+      text-anchor="middle" 
+      letter-spacing="2"
+    >
+      Recruitment Solutions
+    </text>
+  </g>
+</svg>

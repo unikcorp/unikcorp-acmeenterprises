@@ -1,0 +1,135 @@
+/* Continuous Infinite Moving Ticker Component */
+.moving-ticker-container {
+  background: #06182a;
+  border-top: 1px solid rgba(22, 163, 74, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  height: 48px;
+  overflow: hidden;
+  position: relative;
+  z-index: 10;
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.ticker-label-badge {
+  background: #16a34a;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  padding: 0 16px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  z-index: 2;
+  box-shadow: 4px 0 12px rgba(0, 0, 0, 0.25);
+}
+
+.live-pulse-dot {
+  width: 7px;
+  height: 7px;
+  background: #ffffff;
+  border-radius: 50%;
+  animation: pulseTickerDot 1.4s infinite;
+}
+
+@keyframes pulseTickerDot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.3; transform: scale(1.4); }
+}
+
+.ticker-track-wrap {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* Gradient fade masks on left and right edges */
+.ticker-track-wrap::before,
+.ticker-track-wrap::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 40px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.ticker-track-wrap::before {
+  left: 0;
+  background: linear-gradient(90deg, #06182a, transparent);
+}
+
+.ticker-track-wrap::after {
+  right: 0;
+  background: linear-gradient(-90deg, #06182a, transparent);
+}
+
+.ticker-track {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  animation: marqueeContinuous 38s linear infinite;
+  will-change: transform;
+}
+
+.moving-ticker-container:hover .ticker-track {
+  animation-play-state: paused;
+}
+
+@keyframes marqueeContinuous {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.ticker-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 14px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #e2e8f0;
+}
+
+.t-icon {
+  flex-shrink: 0;
+}
+
+.t-icon.gold { color: #f59e0b; }
+.t-icon.blue { color: #38bdf8; }
+.t-icon.green { color: #4ade80; }
+.t-icon.teal { color: #2dd4bf; }
+.t-icon.orange { color: #fb923c; }
+
+.ticker-bullet {
+  color: #16a34a;
+  margin-left: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .moving-ticker-container {
+    height: 42px;
+  }
+  .ticker-label-badge {
+    padding: 0 10px;
+    font-size: 10px;
+  }
+  .ticker-item {
+    font-size: 12px;
+    gap: 6px;
+    padding: 0 10px;
+  }
+}

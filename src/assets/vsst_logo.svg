@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" width="100%" height="100%">
+  <!-- VSS Technical Services Logo -->
+  <g transform="translate(140, 20)">
+    <!-- Outer Deep Blue Flame Shape -->
+    <path d="M 60 0 C 60 0 10 70 10 130 C 10 185 50 215 75 215 C 35 195 30 150 45 115 C 60 80 85 45 85 45 C 85 45 110 95 110 145 C 110 200 75 225 60 230 C 105 225 125 175 125 130 C 125 70 60 0 60 0 Z" fill="#1b3573"/>
+    <!-- Inner Bright Orange Flame -->
+    <path d="M 62 70 C 62 70 42 105 45 140 C 48 175 75 195 85 200 C 68 185 62 165 65 145 C 68 125 80 100 80 100 C 80 100 95 130 95 155 C 95 180 82 195 75 200 C 95 190 102 165 102 145 C 102 110 62 70 62 70 Z" fill="#f26522"/>
+  </g>
+  <!-- Text Brand -->
+  <text x="200" y="260" font-family="'Inter', 'Segoe UI', sans-serif" font-size="20" font-weight="800" fill="#1e293b" text-anchor="middle" letter-spacing="0.5">
+    VSST<tspan font-weight="600">echnical Services</tspan>
+  </text>
+  <text x="200" y="285" font-family="'Inter', 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#475569" text-anchor="middle">
+    Execution of turnaround shutdown,
+  </text>
+  <text x="200" y="304" font-family="'Inter', 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#475569" text-anchor="middle">
+    EPIC Contracts, Project management
+  </text>
+</svg>

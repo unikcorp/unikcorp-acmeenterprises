@@ -1,0 +1,17 @@
+/* 3D Model Showcase Styles */
+model-viewer {
+  --poster-color: transparent;
+  --progress-bar-color: #10b981;
+  --progress-bar-height: 4px;
+  background-color: #0b1523;
+  width: 100%;
+  height: 100%;
+}
+
+model-viewer::part(default-progress-bar) {
+  background-color: #10b981;
+}
+
+model-viewer:focus {
+  outline: none;
+}

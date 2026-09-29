@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 580" width="100%" height="100%">
+  <!-- ACME ENTERPRISES - Exact Official Blue & Green Logo with Crisp Contrast Filter -->
+  <defs>
+    <!-- Official Royal Navy Blue -->
+    <linearGradient id="acmeBlueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#254bb5" />
+      <stop offset="50%" stop-color="#193582" />
+      <stop offset="100%" stop-color="#112258" />
+    </linearGradient>
+
+    <!-- Official Vibrant Green -->
+    <linearGradient id="acmeGreenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="60%" stop-color="#16a34a" />
+      <stop offset="100%" stop-color="#15803d" />
+    </linearGradient>
+
+    <!-- Crisp White Halo Contour for 100% Clarity on Dark Surfaces -->
+    <filter id="whiteHalo" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="2.5" flood-color="#ffffff" flood-opacity="0.95" />
+      <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#ffffff" flood-opacity="0.65" />
+    </filter>
+  </defs>
+
+  <g id="acme-logo-group" filter="url(#whiteHalo)">
+    <!-- 1. The Dynamic Green Swoosh Arc sweeping from C over M & E -->
+    <path 
+      d="M 425 240 C 470 120, 620 42, 890 135 C 755 58, 550 68, 445 220 Z" 
+      fill="url(#acmeGreenGrad)" 
+    />
+
+    <!-- 2. Letter 'A' (Royal Navy Blue with crisp white contour) -->
+    <path 
+      d="M 180 140 L 295 365 L 242 365 L 214 308 L 146 308 L 118 365 L 65 365 Z M 180 232 L 158 276 L 202 276 Z" 
+      fill="url(#acmeBlueGrad)" 
+      stroke="#ffffff" 
+      stroke-width="3" 
+      paint-order="stroke fill"
+    />
+
+    <!-- 3. Letter 'C' (Stylized Emerald Green Crescent) -->
+    <path 
+      d="M 378 152 C 300 156, 275 220, 285 272 C 298 335, 355 372, 430 365 C 485 360, 510 330, 510 330 C 510 330, 468 346, 420 338 C 358 328, 332 280, 336 242 C 340 205, 368 178, 415 178 C 426 178, 408 155, 378 152 Z" 
+      fill="url(#acmeGreenGrad)" 
+      stroke="#ffffff" 
+      stroke-width="2.5" 
+      paint-order="stroke fill"
+    />
+
+    <!-- 4. Letter 'M' (Royal Navy Blue) -->
+    <path 
+      d="M 530 162 L 582 162 L 655 318 L 728 162 L 780 162 L 780 365 L 734 365 L 734 238 L 678 350 L 632 350 L 576 238 L 576 365 L 530 365 Z" 
+      fill="url(#acmeBlueGrad)" 
+      stroke="#ffffff" 
+      stroke-width="3" 
+      paint-order="stroke fill"
+    />
+
+    <!-- 5. Letter 'E' (Royal Navy Blue) -->
+    <path 
+      d="M 820 162 L 940 162 L 940 206 L 868 206 L 868 244 L 930 244 L 930 286 L 868 286 L 868 321 L 942 321 L 942 365 L 820 365 Z" 
+      fill="url(#acmeBlueGrad)" 
+      stroke="#ffffff" 
+      stroke-width="3" 
+      paint-order="stroke fill"
+    />
+
+    <!-- 6. ACME ENTERPRISES (Bold Black/Dark Navy with White Contour) -->
+    <text 
+      x="500" 
+      y="442" 
+      font-family="'Arial Black', 'Montserrat', 'Inter', sans-serif" 
+      font-size="64" 
+      font-weight="900" 
+      fill="#0f172a" 
+      stroke="#ffffff" 
+      stroke-width="4" 
+      paint-order="stroke fill"
+      text-anchor="middle" 
+      letter-spacing="4.5"
+    >
+      ACME ENTERPRISES
+    </text>
+
+    <!-- 7. Recruitment Solutions (Title Case Regular with White Contour) -->
+    <text 
+      x="500" 
+      y="515" 
+      font-family="'Arial', 'Helvetica', 'Inter', sans-serif" 
+      font-size="48" 
+      font-weight="700" 
+      fill="#1e293b" 
+      stroke="#ffffff" 
+      stroke-width="3" 
+      paint-order="stroke fill"
+      text-anchor="middle" 
+      letter-spacing="1.5"
+    >
+      Recruitment Solutions
+    </text>
+  </g>
+</svg>

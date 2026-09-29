@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 580" width="100%" height="100%">
+  <!-- ACME ENTERPRISES - Exact Official Logo (High-Contrast White & Emerald for Dark Backgrounds) -->
+  <defs>
+    <!-- Official Vibrant Green -->
+    <linearGradient id="acmeGreenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="60%" stop-color="#16a34a" />
+      <stop offset="100%" stop-color="#15803d" />
+    </linearGradient>
+  </defs>
+
+  <g id="acme-logo-group">
+    <!-- 1. The Dynamic Green Swoosh Arc sweeping from C over M & E -->
+    <path 
+      d="M 425 240 C 470 120, 620 42, 890 135 C 755 58, 550 68, 445 220 Z" 
+      fill="url(#acmeGreenGrad)" 
+    />
+
+    <!-- 2. Letter 'A' (Crisp White) -->
+    <path 
+      d="M 180 140 L 295 365 L 242 365 L 214 308 L 146 308 L 118 365 L 65 365 Z M 180 232 L 158 276 L 202 276 Z" 
+      fill="#ffffff" 
+    />
+
+    <!-- 3. Letter 'C' (Stylized Emerald Green Crescent) -->
+    <path 
+      d="M 378 152 C 300 156, 275 220, 285 272 C 298 335, 355 372, 430 365 C 485 360, 510 330, 510 330 C 510 330, 468 346, 420 338 C 358 328, 332 280, 336 242 C 340 205, 368 178, 415 178 C 426 178, 408 155, 378 152 Z" 
+      fill="url(#acmeGreenGrad)" 
+    />
+
+    <!-- 4. Letter 'M' (Crisp White with centered baseline vertex) -->
+    <path 
+      d="M 530 162 L 582 162 L 655 318 L 728 162 L 780 162 L 780 365 L 734 365 L 734 238 L 678 350 L 632 350 L 576 238 L 576 365 L 530 365 Z" 
+      fill="#ffffff" 
+    />
+
+    <!-- 5. Letter 'E' (Crisp White) -->
+    <path 
+      d="M 820 162 L 940 162 L 940 206 L 868 206 L 868 244 L 930 244 L 930 286 L 868 286 L 868 321 L 942 321 L 942 365 L 820 365 Z" 
+      fill="#ffffff" 
+    />
+
+    <!-- 6. ACME ENTERPRISES (Bold Sans-Serif Text in Crisp White) -->
+    <text 
+      x="500" 
+      y="442" 
+      font-family="'Arial Black', 'Montserrat', 'Inter', sans-serif" 
+      font-size="64" 
+      font-weight="900" 
+      fill="#ffffff" 
+      text-anchor="middle" 
+      letter-spacing="4.5"
+    >
+      ACME ENTERPRISES
+    </text>
+
+    <!-- 7. Recruitment Solutions (Title Case Regular Sans-Serif in Light Slate) -->
+    <text 
+      x="500" 
+      y="515" 
+      font-family="'Arial', 'Helvetica', 'Inter', sans-serif" 
+      font-size="48" 
+      font-weight="500" 
+      fill="#cbd5e1" 
+      text-anchor="middle" 
+      letter-spacing="1.5"
+    >
+      Recruitment Solutions
+    </text>
+  </g>
+</svg>

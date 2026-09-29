@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 340" width="100%" height="100%">
+  <!-- MATCO Group of Company Logo -->
+  <g transform="translate(130, 20)">
+    <!-- Outer Hexagonal / Octagonal Geometric Box Frame -->
+    <rect x="15" y="10" width="110" height="120" rx="14" fill="#ffffff" stroke="#c2410c" stroke-width="4"/>
+    
+    <!-- Red Geometric Interlaced Lattice Elements -->
+    <!-- Top & Bottom horizontal bars -->
+    <rect x="35" y="24" width="70" height="10" fill="#dc2626"/>
+    <rect x="35" y="106" width="70" height="10" fill="#dc2626"/>
+    <!-- Vertical outer side bars -->
+    <rect x="25" y="34" width="10" height="72" fill="#dc2626"/>
+    <rect x="105" y="34" width="10" height="72" fill="#dc2626"/>
+    <!-- Inner interlaced 'T' & cross arms -->
+    <rect x="65" y="24" width="10" height="92" fill="#dc2626"/>
+    <rect x="40" y="65" width="60" height="10" fill="#dc2626"/>
+    <!-- Diagonal bracket facets -->
+    <path d="M 40 40 L 55 40 L 40 55 Z" fill="#dc2626"/>
+    <path d="M 100 40 L 85 40 L 100 55 Z" fill="#dc2626"/>
+    <path d="M 40 100 L 55 100 L 40 85 Z" fill="#dc2626"/>
+    <path d="M 100 100 L 85 100 L 100 85 Z" fill="#dc2626"/>
+    
+    <!-- Ribbon Banner Badge 'SINCE - 1982' -->
+    <path d="M 5 135 L 135 135 L 125 152 L 135 168 L 5 168 L 15 152 Z" fill="#1e293b"/>
+    <text x="70" y="156" font-family="'Inter', 'Segoe UI', sans-serif" font-size="11" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="1.5">
+      SINCE - 1982
+    </text>
+
+    <!-- Subtitle Label -->
+    <text x="70" y="184" font-family="'Inter', 'Segoe UI', sans-serif" font-size="10" font-weight="800" fill="#c2410c" text-anchor="middle" letter-spacing="0.5">
+      MATCO GROUP OF COMPANY
+    </text>
+  </g>
+
+  <!-- Title & Description Below -->
+  <text x="200" y="250" font-family="'Inter', 'Segoe UI', sans-serif" font-size="16" font-weight="900" fill="#1e293b" text-anchor="middle" letter-spacing="0.5">
+    MATCO GROUP OF COMPANY
+  </text>
+  <text x="200" y="278" font-family="'Inter', 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#475569" text-anchor="middle">
+    MATCO acts as a sister consignee of
+  </text>
+  <text x="200" y="298" font-family="'Inter', 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#475569" text-anchor="middle">
+    ACME enterprises for the supply of
+  </text>
+  <text x="200" y="318" font-family="'Inter', 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#475569" text-anchor="middle">
+    manpower locally and supports getting
+  </text>
+</svg>

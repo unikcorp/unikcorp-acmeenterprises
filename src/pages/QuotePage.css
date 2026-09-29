@@ -1,0 +1,265 @@
+/* Quote Page Styles - Green & Navy Theme */
+.quote-page {
+  width: 100%;
+  background-color: #f8fafc;
+}
+
+.quote-form-container {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.quote-card {
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 10px 30px rgba(10, 30, 54, 0.05);
+  padding: 40px 36px;
+  text-align: left;
+}
+
+.quote-card-header {
+  margin-bottom: 28px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid #f1f5f9;
+}
+
+.quote-card-header h2 {
+  font-size: 24px;
+  font-weight: 900;
+  color: #0a1e36;
+  margin-bottom: 6px;
+}
+
+.quote-card-header p {
+  font-size: 14px;
+  color: #64748b;
+  margin: 0;
+}
+
+.form-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.q-field {
+  margin-bottom: 20px;
+}
+
+.q-field label {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  color: #0a1e36;
+  margin-bottom: 6px;
+}
+
+.q-field input,
+.q-field select,
+.q-field textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: #f8fafc;
+  font-size: 14.5px;
+  color: #0f172a;
+  outline: none;
+  transition: all 0.2s;
+  box-sizing: border-box;
+}
+
+.q-field input:focus,
+.q-field select:focus,
+.q-field textarea:focus {
+  border-color: #16a34a;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.15);
+}
+
+.btn-form-submit {
+  width: 100%;
+  background: #16a34a;
+  color: #ffffff;
+  border: none;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 14px rgba(22, 163, 74, 0.3);
+  margin-top: 10px;
+}
+
+.btn-form-submit:hover {
+  background: #15803d;
+  box-shadow: 0 6px 18px rgba(22, 163, 74, 0.4);
+}
+
+/* Success Card */
+.quote-success-card {
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid #bbf7d0;
+  padding: 45px 36px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(22, 163, 74, 0.08);
+}
+
+.success-check-icon {
+  color: #16a34a;
+  margin-bottom: 18px;
+}
+
+.quote-success-card h2 {
+  font-size: 26px;
+  font-weight: 900;
+  color: #0a1e36;
+  margin-bottom: 12px;
+}
+
+.quote-success-card > p {
+  color: #64748b;
+  font-size: 15px;
+  max-width: 600px;
+  margin: 0 auto 24px;
+  line-height: 1.6;
+}
+
+.quote-success-details {
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  border-radius: 10px;
+  padding: 16px 20px;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+  font-size: 14px;
+  color: #15803d;
+}
+
+.quote-success-details p {
+  margin: 0;
+}
+
+.quote-success-actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/* Responsive */
+@media (max-width: 680px) {
+  .quote-card,
+  .quote-success-card {
+    padding: 24px 18px;
+  }
+  .form-grid-2 {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .quote-success-actions {
+    flex-direction: column;
+  }
+  .quote-success-actions a {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* =========================================
+   CAPTCHA & FIELD VALIDATION STYLING
+   ========================================= */
+
+.input-error {
+  border-color: #ef4444 !important;
+  background-color: #fef2f2 !important;
+}
+
+.input-error:focus {
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.15) !important;
+}
+
+.field-error-msg {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #ef4444;
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+.captcha-box-field {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 14px 16px;
+  margin-bottom: 20px;
+}
+
+.captcha-challenge-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.captcha-badge-display,
+.alphanumeric-captcha-badge {
+  background: linear-gradient(135deg, #0a1e36 0%, #1e293b 100%);
+  border: 1px solid #334155;
+  border-radius: 8px;
+  padding: 8px 14px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.3);
+  user-select: none;
+}
+
+.captcha-code-text {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 19px;
+  font-weight: 900;
+  letter-spacing: 5px;
+  color: #4ade80;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9);
+  font-style: italic;
+  text-decoration: line-through;
+}
+
+.btn-refresh-captcha {
+  background: transparent;
+  border: none;
+  color: #16a34a;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 2px;
+  transition: transform 0.2s ease;
+}
+
+.btn-refresh-captcha:hover {
+  transform: rotate(45deg);
+  color: #15803d;
+}
+
+.captcha-answer-input {
+  flex: 1;
+}
+
+@media (max-width: 480px) {
+  .captcha-challenge-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
