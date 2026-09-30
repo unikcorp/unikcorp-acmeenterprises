@@ -151,7 +151,7 @@ const QuotePage = () => {
                     <label>Corporate Email *</label>
                     <input 
                       type="email" 
-                      placeholder="john@company.com"
+                      
                       value={formData.email}
                       onChange={(e) => setFormData({...formData, email: e.target.value})}
                       required 
@@ -276,7 +276,7 @@ const QuotePage = () => {
                 </div>
 
                 <button type="submit" className="btn-form-submit">
-                  <span>Submit Manpower Demand Assessment</span>
+                  <span>Submit </span>
                   <ArrowRight size={18} />
                 </button>
               </form>

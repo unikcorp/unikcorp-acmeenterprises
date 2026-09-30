@@ -315,7 +315,7 @@ const AboutPage = () => {
             {/* Letter Narrative Body with Verbatim PDF Text */}
             <div className="intro-letter-body">
               <p className="narrative-lead">
-                <strong>“M/s. Acme Enterprises”</strong> has been a front-runner in professional recruitment solutions for over <strong>15 years</strong>, based in <strong>India at 28GF Damji Shamji Ind. Estate, LBS Marg, Vikhroli West, Mumbai - 400083</strong>. Acme is the consultant who provides coalescent, integrated, comprehensive and cost-effective placements in the business industry and service sector. As Manpower Consultants, we offer the entire spectrum of personnel requirements from unskilled to skilled workers and professionally qualified staff in every trade.
+<strong>“M/s. Acme Enterprises”</strong> has been a front-runner in professional recruitment solutions for over <strong>15 years</strong>, based in <strong>28GF Damji Shamji Industrial Estate, LBS Marg, Vikhroli West, Mumbai - 400083, India</strong>. We are consultants providing <strong>integrated, comprehensive, and cost-effective placement solutions</strong> across the business, industrial, and service sectors. As manpower consultants, we offer the entire spectrum of personnel requirements, from <strong>unskilled and skilled workers to professionally qualified staff</strong> across various trades.
               </p>
               
               <p>

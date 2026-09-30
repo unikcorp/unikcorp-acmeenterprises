@@ -260,7 +260,7 @@ const ShutdownEpicPage = () => {
           </div>
           <div className="shutdown-cta-right">
             <Link to="/contact" className="btn-primary">
-              <span>Contact Shutdown Desk</span>
+              <span>Contact</span>
               <ArrowRight size={18} />
             </Link>
             <Link to="/quote" className="btn-outline">
