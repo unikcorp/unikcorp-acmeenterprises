@@ -17,7 +17,7 @@ import {
   X,
 } from "lucide-react";
 import "./ContactPage.css";
-const CONTACT_API_URL = "https://api.acmeofc.com/api/contact";
+const CONTACT_API_URL = import.meta.env.VITE_API_URL || "https://api.acmeofc.com/api/contact";
 const ContactPage = () => {
   const [submitted, setSubmitted] = useState(false);
   const [formData, setFormData] = useState({
