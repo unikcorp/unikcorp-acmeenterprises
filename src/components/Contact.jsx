@@ -104,7 +104,8 @@ const Contact = () => {
             <div className="info-icon"><Phone size={20} /></div>
             <div>
               <h4>Office Telephones & Fax:</h4>
-              <p>Tel: +91 8291053466</p>
+              <p>Tel:+91 22 25770147</p>
+              <p>Mob: +91 8291 05 3466 </p>
               <p>Fax: +91 22 210 3000</p>
             </div>
           </div>

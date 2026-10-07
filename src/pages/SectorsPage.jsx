@@ -158,7 +158,7 @@ const SectorsPage = () => {
             <HardHat size={15} /> 8 CORE INDUSTRY SECTORS
           </div>
           <h1>
-            Our Sectors & <span>Trade Coverage</span>
+            Our Service Sectors & <span>Trade Coverage</span>
           </h1>
           <p>
             Supplying pre-screened, trade-tested and verified personnel across 8 major technical and commercial sectors worldwide.

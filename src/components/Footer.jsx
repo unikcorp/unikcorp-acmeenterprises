@@ -45,7 +45,7 @@ const Footer = () => {
         {/* Column 1: Brand & Credibility with official Logo */}
         <div className="footer-col brand-col">
           <Link to="/" className="footer-logo-link">
-            <img src={acmeLogoBlue} alt="ACME Enterprises Logo" className="footer-logo-img" />
+            <img src={acmeLogoBlue} alt="ACME" className="footer-logo-img" />
           </Link>
           <p className="footer-bio">
             Government-recognized overseas recruitment specialist for over 15 years, mobilizing verified technical talent across India and the GCC.
@@ -65,17 +65,17 @@ const Footer = () => {
           <ul className="footer-nav-list">
             <li><Link to="/">Home</Link></li>
             <li><Link to="/about">About Us</Link></li>
-            <li><Link to="/sectors">Sectors & Trades</Link></li>
+            <li><Link to="/sectors">Our Services</Link></li>
             <li><Link to="/shutdown-epic">Industrial Turnarounds</Link></li>
             <li><Link to="/clients">Our GCC Clients</Link></li>
-            <li><Link to="/sister-concerns">Our Services</Link></li>
+            <li><Link to="/sister-concerns">Our Sister Concern</Link></li>
             <li><Link to="/contact">Contact Directory</Link></li>
           </ul>
         </div>
 
         {/* Column 3: Sister Concerns */}
         <div className="footer-col">
-          <h4 className="footer-title">Our Services</h4>
+          <h4 className="footer-title">Our Sister Concern</h4>
           <ul className="footer-concerns-clean">
             <li>
               <Link to="/sister-concerns">

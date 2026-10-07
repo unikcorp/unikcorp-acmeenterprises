@@ -146,8 +146,10 @@ const Hero = () => {
               <span>+91 8291 05 3466</span>
             </a>
           </div>
+        </div>
 
-          {/* 3 Bottom Trust Features matching image with smooth hover motion */}
+        {/* Right Side Trust Features */}
+        <div className="hero-right-trust-wrapper">
           <div className="hero-trust-features">
             <div className="trust-feature-item hover-lift">
               <Users size={18} className="feat-icon-green" />

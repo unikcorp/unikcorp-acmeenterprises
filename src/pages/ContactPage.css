@@ -401,3 +401,129 @@
     align-items: stretch;
   }
 }
+
+/* =========================================
+   CV UPLOAD FIELD STYLING
+   ========================================= */
+
+.cv-upload-field {
+  margin-bottom: 20px;
+}
+
+.cv-hint {
+  display: inline-block;
+  font-weight: 500;
+  color: #94a3b8;
+  font-size: 11.5px;
+  margin-left: 4px;
+}
+
+/* Dropzone (empty state) */
+.cv-dropzone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 24px 16px;
+  background: #f8fafc;
+  border: 2px dashed #cbd5e1;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.2s ease;
+  margin-top: 4px;
+}
+
+.cv-dropzone:hover,
+.cv-dropzone.dragging {
+  border-color: #16a34a;
+  background: #f0fdf4;
+}
+
+.cv-dropzone-icon {
+  color: #16a34a;
+}
+
+.cv-dropzone-text {
+  font-size: 13px;
+  color: #64748b;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.cv-file-input {
+  display: none;
+}
+
+/* File preview (after selection) */
+.cv-file-preview {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  border-radius: 10px;
+  margin-top: 4px;
+}
+
+.cv-file-icon {
+  color: #16a34a;
+  flex-shrink: 0;
+}
+
+.cv-file-meta {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+}
+
+.cv-file-name {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #0a1e36;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cv-file-size {
+  font-size: 11.5px;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.cv-remove-btn {
+  background: #fee2e2;
+  color: #dc2626;
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.cv-remove-btn:hover {
+  background: #fecaca;
+  transform: scale(1.08);
+}
+
+/* Mobile tuning for CV upload */
+@media (max-width: 680px) {
+  .cv-dropzone {
+    padding: 18px 12px;
+  }
+  .cv-dropzone-text {
+    font-size: 12.5px;
+  }
+  .cv-file-name {
+    font-size: 12.5px;
+  }
+}
